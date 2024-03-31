@@ -14,7 +14,7 @@
 
         function handleDeviceOrientation(event) {
             const body = document.getElementById('cv-container');
-            const gamma = event.gamma * -0.5; // Device tilt along the Y-axis (in degrees)
+            const gamma = event.gamma * -0.2; // Device tilt along the Y-axis (in degrees)
             body.style.transform = `perspective(1000px) rotateY(${gamma}deg)`;
         }
     </script>

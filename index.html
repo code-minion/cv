@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        window.addEventListener('mousemove', handleMouseMove);
+        window.addEventListener('deviceorientation', handleDeviceOrientation);
+
+        function handleMouseMove(event) {
+            const body = document.getElementById('cv-container');
+            const offsetX = (event.clientX - window.innerWidth / 2) / 500; // Adjust the division factor for sensitivity
+            const offsetY = (event.clientY - window.innerHeight / 2) / 500; // Adjust the division factor for sensitivity
+            body.style.transform = `perspective(1000px) rotateY(${offsetX}deg)`;
+        }
+
+        function handleDeviceOrientation(event) {
+            const body = document.getElementById('cv-container');
+            const gamma = event.gamma / 2; // Device tilt along the Y-axis (in degrees)
+            body.style.transform = `perspective(1000px) rotateY(${gamma}deg)`;
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bradley Chan - Curriculum Vitae</title>
@@ -156,22 +173,5 @@
             </div>
         </div>
     </div>
-    <script>
-        window.addEventListener('mousemove', handleMouseMove);
-        window.addEventListener('deviceorientation', handleDeviceOrientation);
-
-        function handleMouseMove(event) {
-            const body = document.getElementById('cv-container');
-            const offsetX = (event.clientX - window.innerWidth / 2) / 500; // Adjust the division factor for sensitivity
-            const offsetY = (event.clientY - window.innerHeight / 2) / 500; // Adjust the division factor for sensitivity
-            body.style.transform = `perspective(1000px) rotateY(${offsetX}deg)`;
-        }
-
-        function handleDeviceOrientation(event) {
-            const body = document.getElementById('cv-container');
-            const gamma = event.gamma / 2; // Device tilt along the Y-axis (in degrees)
-            body.style.transform = `perspective(1000px) rotateY(${gamma}deg)`;
-        }
-    </script>
 </body>
 </html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bradley Chan - Curriculum Vitae</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            transform-style: preserve-3d;
+            transition: transform 0.1s ease-out; /* Smooth transition for subtle tilt effect */
+        }
+        h1, h2, h3 {
+            color: #444;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 10px 0;
+            color: #666;
+        }
+        .summary {
+            font-style: italic;
+            color: #777;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+        .section {
+            padding: 40px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        .parallax-inner {
+            position: relative;
+            z-index: 1;
+        }
+        .parallax:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 0;
+        }
+        .skills ul {
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .section {
+                padding: 20px;
+            }
+            h1, h2, h3 {
+                font-size: 24px;
+            }
+        }
+        .header-text {
+            mix-blend-mode: difference;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cv-body">
+        <div class="parallax" style="background-image: url('https://source.unsplash.com/random');">
+            <div class="container">
+                <header class="header-text">
+                    <h1>Bradley Chan</h1>
+                    <p>Phone: 02102775017 | Email: chanwk3@gmail.com | LinkedIn: <a href="https://nz.linkedin.com/in/codeminion">codeminion</a></p>
+                </header>
+            </div>
+        </div>
+        <div class="container" id="cv-container">
+            <div class="section">
+                <div class="parallax-inner">
+                    <h2>Professional Summary</h2>
+                    <h3>Aspiring Technical Leader with a Passion for Empowering Others</h3>
+                    <p class="summary">
+                        Dedicated to merging technical expertise with compassionate leadership to drive individual and team success. With a steadfast belief that people should always come first, I aspire to become a people leader who not only achieves results but also fosters growth and well-being within my team.
+                        </p>
+                        
+                    <p class="summary">
+                        Throughout my career journey, I've encountered challenges that seemed insurmountable at first glance. Yet, through perseverance and determination, I've consistently overcome obstacles. However, I recognize that true achievement lies not in personal triumphs, but in the ability to uplift and guide others along their paths to success. My greatest ambition is to make a profound difference by helping individuals navigate their challenges and empowering them to thrive.
+                        </p>
+                        
+                    <p class="summary">
+                        I am drawn to the significant opportunity for simplifying common tasks in the workplace, particularly for non-technical employees. I see this as a vital area where my technical skills and passion for enhancing efficiency can make a tangible impact, ultimately streamlining processes and improving overall productivity.
+                        </p>
+                        
+                    <p class="summary">
+                        With a natural aptitude for communication and a deep-seated concern for the well-being of my team, I am confident in my ability to lead with empathy and integrity. I am committed to creating a supportive environment where every team member feels valued, empowered, and inspired to achieve their full potential.
+                        </p>
+                        
+                    <p class="summary">
+                        Driven by a desire to merge technical innovation with human-centric leadership, I am poised to embark on a fulfilling journey towards becoming a transformative leader who not only drives results but also uplifts and empowers those around me.</p>
+                        </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Work Experience</h2>
+                <div class="parallax-inner">
+                    <p><strong>2010:</strong> Intern, Quality Education (Tech Support Department)</p>
+                    <p><strong>2011:</strong> Junior Developer, Olympic Software</p>
+                    <p><strong>2012:</strong> Technical Advisor, Startup</p>
+                    <p><strong>2013:</strong> Game Developer (Contractor), Eyemobi Games</p>
+                    <p><strong>2015:</strong> Game Developer, CerebralFix</p>
+                    <p><strong>2016-2018:</strong> Software Developer, Rush Digital</p>
+                    <p><strong>2019:</strong> Software Developer, Datacom</p>
+                    <p><strong>2019-2021:</strong> Hololens Developer (Contractor), Ascend Reality</p>
+                    <p><strong>2020-2022:</strong> Software Specialist, ASB Bank</p>
+                    <p><strong>2022-Present:</strong> Senior Software Developer, Serko</p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="parallax-inner">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li><strong>Backend Development:</strong> Expert at C# .NET development</li>
+                        <li><strong>Frontend Development:</strong> Expert at modern web development, focused on React</li>
+                        <li><strong>SQL:</strong> Proficient with writing all sorts of queries, table schemas, and can provide workable database designs</li>
+                        <li><strong>Cloud Architecture:</strong> Knowledgeable but limited practice</li>
+                        <li><strong>Rapid Prototyping:</strong> Winner of Serko Hackathon of 2023, runner up in many others. I am one of the best when it comes to prototyping.</li>
+                        <li><strong>XR Development:</strong> still retain many skills from my game dev/contracting, but slightly rusty.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="parallax-inner">
+                    <h2>Leadership Experience</h2>
+                    <p>I've lead 2 teams and mentored 2 individuals are several different points during my professional career. I never sought it in the past, usually the present lead has to be absent due to some circumstances and I get thrust into the spotlight. I feel I have done a good job, despite rough deadlines and new team members that need to be brought up to speed, I managed to deliver work on time without concessions or crunch time. I have mentored a few times during my career as well, and I have seen those individuals grow and thrive on their own afterwards.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('mousemove', handleMouseMove);
+        window.addEventListener('deviceorientation', handleDeviceOrientation);
+
+        function handleMouseMove(event) {
+            const body = document.getElementById('cv-container');
+            const offsetX = (event.clientX - window.innerWidth / 2) / 500; // Adjust the division factor for sensitivity
+            const offsetY = (event.clientY - window.innerHeight / 2) / 500; // Adjust the division factor for sensitivity
+            body.style.transform = `perspective(1000px) rotateY(${offsetX}deg)`;
+        }
+
+        function handleDeviceOrientation(event) {
+            const body = document.getElementById('cv-container');
+            const gamma = event.gamma / 2; // Device tilt along the Y-axis (in degrees)
+            body.style.transform = `perspective(1000px) rotateY(${gamma}deg)`;
+        }
+    </script>
+</body>
+</html>

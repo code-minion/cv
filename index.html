@@ -6,16 +6,19 @@
         window.addEventListener('deviceorientation', handleDeviceOrientation);
 
         function handleMouseMove(event) {
-            const body = document.getElementById('cv-container');
+            const containers = document.getElementsByClassName('tilt');
             const offsetX = (event.clientX - window.innerWidth / 2) / 500; // Adjust the division factor for sensitivity
-            const offsetY = (event.clientY - window.innerHeight / 2) / 500; // Adjust the division factor for sensitivity
-            body.style.transform = `perspective(1000px) rotateY(${offsetX}deg)`;
+            for (const container of containers) {
+                container.style.transform = `perspective(1000px) rotateY(${offsetX}deg)`;
+            }
         }
 
         function handleDeviceOrientation(event) {
-            const body = document.getElementById('cv-container');
+            const containers = document.getElementsByClassName('tilt');
             const gamma = event.gamma * -0.2; // Device tilt along the Y-axis (in degrees)
-            body.style.transform = `perspective(1000px) rotateY(${gamma}deg)`;
+            for (const container of containers) {
+                container.style.transform = `perspective(1000px) rotateY(${gamma}deg)`;
+            }
         }
     </script>
     <meta charset="UTF-8">
@@ -112,7 +115,7 @@
             </div>
         </div>
         <div class="container" id="cv-container">
-            <div class="section">
+            <div class="section tilt">
                 <div class="parallax-inner">
                     <h2>Professional Summary</h2>
                     <h3>Aspiring Technical Leader with a Passion for Empowering Others</h3>
@@ -137,7 +140,7 @@
                         </div>
                 </div>
             </div>
-            <div class="section">
+            <div class="section tilt">
                 <h2>Work Experience</h2>
                 <div class="parallax-inner">
                     <p><strong>2010:</strong> Intern, Quality Education (Tech Support Department)</p>
@@ -152,7 +155,7 @@
                     <p><strong>2022-Present:</strong> Senior Software Developer, Serko</p>
                 </div>
             </div>
-            <div class="section">
+            <div class="section tilt">
                 <div class="parallax-inner">
                     <h2>Skills</h2>
                     <ul>
@@ -165,7 +168,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="section">
+            <div class="section tilt">
                 <div class="parallax-inner">
                     <h2>Leadership Experience</h2>
                     <p>I've lead 2 teams and mentored 2 individuals are several different points during my professional career. I never sought it in the past, usually the present lead has to be absent due to some circumstances and I get thrust into the spotlight. I feel I have done a good job, despite rough deadlines and new team members that need to be brought up to speed, I managed to deliver work on time without concessions or crunch time. I have mentored a few times during my career as well, and I have seen those individuals grow and thrive on their own afterwards.</p>
